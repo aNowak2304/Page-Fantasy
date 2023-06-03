@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.175" height="56.175" viewBox="0 0 56.175 56.175">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M0,0H56.175V56.175H0Z" fill="none"/>
+    </clipPath>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 130 130">
+      <image width="130" height="130" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAYAAACKAxD9AAAABHNCSVQICAgIfAhkiAAABBhJREFUeJzt3T2IHlUUgOH3JNGgxPWnEiGNNloYLUIsbLRQoq1tSi2EgIKCVTpBS4UgRAOpoqSwFdOppUkwkVhYWG+T1SwxEgx+x+K7kqBmc+dv7+zu+5Rh5s6BfXNnZ3b5FiRJkiRJkqQOYqyFMnMFeB44Crw61rr6X6vAceAUcCUibg5dcHAIJYAzwOGha6mXNeAYcCIiFn0X6R1CZu5mGcBrfdfQqNaB/RFxrc/JQ0K4Buzre74mczAiLnQ9aVefK2VmYgRzdT4z3+p6UqcdodwOrmIEc7cADnXZGbruCGcwgq1gF/BtlxOqd4TydLDedSI19XNEPFlzYJcd4UzPYdTO47UHVoVQdgPfE2w992TmOzUHVt0aMvMV4KtBI6mZiLjr17n21nB04CyaudodIaceRNMZc0fQNmcIAgxBhSEIMAQVhiAA9rQeYIv6BTgHXAbOl387HxFrXRbJzJe49Z/xc+CR0SbsyPcI9X4FzgIfRcT3Yy+emavAo2OvC3XvEdwR7u434DTwXkT80XqYqRjCxs4BL0fE1daDTM1vFu/sZEQc2gkRgCHcycmIeKP1EJvJEP7ry50WAfjU8G+/Aw9FxF+bfWGfGmYkIh5oPUMr3hpuudF6gJYMYSkj4r7WQ7RkCEvXWw/QmiEsvd96gNZ8alja0+JJ4XatnxrcEeBG6wjmwBB2+NPCPwxhApn5QWauZgdMdFuo5Qsl+HDMxTLzM+D1MdfcDO4II8rMJ9iCEYAhjO3p1gP0ZQjjerD1AH0ZggBDUGEIAgxBhSEIMAQVhiBg+/8Y+nBEnG09RI3M/AF4doq1/TG0qhnCfOxteXFDmI+HW17cEAQYwpystLy4IczH/S0vbggzkJn3tp7BEObhzdYDGIIAQ1BhCPPwdusBDEGAIcxF09fLYAhz0fyzGQxBgCHMRfPPbjKEedjdeoDt/htKP7L8MO2NfBoRXwy9UGY+BXzS8/QXhl5/I368HhyoOObrka61wsRf0Cl5axBgCCoMQYAhqDAEAYagwhAEGIIKQxBgCCoMQYAhqDAEAYagwhAEGIIKQxBgCCoMQYAhqDAEAYagwhAEGIIKQxBgCCoMQYAhqDAEAYagwhAEGIIKQxBQH8LqpFOoudoQjk86hZqrDeHUpFNoShdrDqoN4Qqw1n8WNbIAjtQcWBVCRNwEjg2ZSE3ciIifag7s8tRwAljvN48aWADP1R5cHUJELID9fSZSE99FxOXagzu9R4iIa8DBziNps12KiBe7nND5hVJEXGD5F0cWXc/VprgUEZ3/2HivN4sR8TFwCLje53xNYgF80ycCGPCKOSIuRMQ+4DTwZ991NNiC5ZvfZ7reDm43+GcNEXEkIvYC7w5dS51dBA5ExGNdvjGUJEmSJEmSBvsbGfzqqCmAfjwAAAAASUVORK5CYII="/>
+    </pattern>
+  </defs>
+  <g id="Scroll_Group_2" data-name="Scroll Group 2" clip-path="url(#clip-path)" style="isolation: isolate">
+    <path id="facebook" d="M0,0H65.2V65.2H0Z" transform="translate(-5.016 -5.016)" fill="url(#pattern)"/>
+  </g>
+</svg>

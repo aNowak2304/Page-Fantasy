@@ -1,1 +1,5 @@
 node_modules
+html
+src
+package-lock.json
+package.json

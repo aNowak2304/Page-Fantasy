@@ -34,16 +34,11 @@ body{
     border: 1px solid transparent;
     cursor: pointer;
     z-index: 1000;
+    
     &:focus{
         outline: none;
         border: 1px solid $navy-color;
         border-radius: 8px;
-    }
-
-    &:hover{
-        .burger-btn__bars::after, .burger-btn__bars::before{
-            width: 100%;
-        }
     }
 
     &__box{
@@ -52,30 +47,49 @@ body{
         height: 30px;
     }
     
-    &__bars, &__bars::after, &__bars::before{
-    content: '';
+    &__bars{
     position: absolute;
+    width: 100%;
     right: 0;
     height: 3px;
     background-color: $navy-color;
-    transition: width .3s;
     } 
 
-    &__bars{
+    &__one{
+        transition: 0.3s ease-in-out;
+    }
+
+    &__two{
+        top: 13px;
         width: 100%;
+    }
 
-        &::after{
-            top: 13px;
-            width: 60%;
-        }
+    &__three{
+        transition: 0.3s ease-in-out;      
+        top: 27px;
+        width: 100%;
+    }
 
-        &::before{
-            top: 27px;
-            width: 30%;
-            transition-delay: .1s;
-        }
+}
+
+.burger-active{
+    .burger-btn__one{
+        transition: 0.3s ease-in-out;
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .burger-btn__two{
+        width: 0;
+    }
+
+    .burger-btn__three{
+        transition: 0.3s ease-in-out;
+        top: 50%;
+        transform: rotate(-45deg);
     }
 }
+
 
 .nav{
     transition: 1s ease-in-out;
@@ -94,7 +108,6 @@ body{
         transition: width 0.3s;
     }
 
-    
     &__item::before, &__item::after{
         content: '';
         position: absolute;
@@ -320,7 +333,7 @@ body{
         flex-direction: column;
         align-items: center;
         margin: 2em 0;
-        padding: 1em;
+        padding: 1em 0.5em;
 
         &-img{   
             width: 200px;
@@ -347,13 +360,8 @@ body{
     color: $main-color;
 
     &__box{
-
-        &-info{
-            padding: 0 1em;
-        }
-
         &-text{
-            padding: 1em 1.5em;
+            padding: 1em;
         }
     }
 
@@ -365,6 +373,7 @@ body{
 }
 
 .work{
+    padding: 0;
     .timeline{
         position: relative;
         display: flex;
@@ -406,6 +415,7 @@ body{
     }
     &__left{
         padding: 0 1em;
+        margin-bottom: 2em;
     }
 
     &__heading{
@@ -424,6 +434,7 @@ body{
         border-bottom: 1px solid $main-color;
         color: $main-color;
     }
+    
     &__info{
         text-align: center;
         font-size: 2rem;
@@ -446,7 +457,6 @@ body{
         align-items: center;
         padding: 0.5em;
     }
-
 
     &__input:first-child{
         border-top-left-radius: 15px;

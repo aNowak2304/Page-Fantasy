@@ -1,5 +1,6 @@
 const navMobile = document.querySelector('.nav-content');
 const navBtn = document.querySelector('.burger-btn');
+const navBtnActive = document.querySelector('.burger-active');
 const allNavLinks = document.querySelectorAll('.nav__item');
 const footerYear = document.querySelector('.footer__year')
 const scrollSpySections = document.querySelectorAll('.section')
@@ -21,11 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const handleNav = () => {
-
+    navBtnActive.classList.toggle('burger-active');
     navMobile.classList.toggle('nav--active');
     allNavLinks.forEach(link => {
         link.addEventListener('click', () =>{
             navMobile.classList.remove('nav--active')
+            navBtn.classList.remove('burger-active')
         })
     })
 }

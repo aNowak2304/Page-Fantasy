@@ -1,5 +1,5 @@
-@import './colors';
-@import './components';
+@use './colors' as *;
+@use './components' as *;
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -78,12 +78,11 @@ body{
 }
 
 .nav{
+    transition: 1s ease-in-out;
     position: fixed;
-    position: relative;
     top: 0;
     width: 100%;
     z-index: 1000;
-
     &__item{
         position: relative;
         top: 10%;
@@ -132,9 +131,11 @@ body{
         height: 80px;
         z-index: 100;
         background-color: $main-color;
+        border-bottom: 1px solid #aaaad8;
     }
 
     &-content{
+        transition: .5s cubic-bezier(0.65, 0.05, 0.36, 1);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -221,23 +222,43 @@ body{
         font-size: 2rem;
     }
 
-    &__btn{
-        position: relative;
-        cursor: pointer;
-        padding: 0.5em 1em;
-        font-size: 1.8rem;
-        border-radius: 22px;
+    &__btn {
+        padding: 0.7em 1.4em;
+        top: 5%;
         border: none;
+        border-radius: 20px;
+        font-weight: bold;
+        letter-spacing: 1px;
         background-color: $cta-color;
         color: $main-color;
-        transition: 0.5s background-color; 
-    }
-
-    &__btn:hover{
-        background-color: $main-color;
+        cursor: pointer;
+        transition: color 1s, transform 1s;
+        position: relative;
+        overflow: hidden;
+        font-size: 2rem;
+      }
+      
+      &__btn:hover {
         color: $cta-color;
-    }
-
+        transform: scale(1);
+      }
+      
+      &__btn::before {
+        content: "";
+        position: absolute;
+        left: -50px;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: $main-color;
+        transform: skewX(45deg);
+        z-index: -1;
+        transition: width 1s;
+      }
+      
+     &__btn:hover::before {
+        width: 250%;
+      }
     }
 
 .footer{
@@ -270,18 +291,18 @@ body{
         }
         &-text{
             margin: 0.5em;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         &-icon{
             margin: 0.7em;
             height: 2.5em;
             width: 2.5em;
-            transition: 0.3s width, 0.3s height;
+            cursor: pointer;
+            transition: transform 0.3s;
         }
 
         &-icon:hover{
-            width: 2.8em;
-            height: 2.8em;
+           transform: scale(1.1);
         }
         
     }
@@ -294,7 +315,6 @@ body{
 }
 
 .services{
-
     &__box{
         display: flex;
         flex-direction: column;
@@ -380,6 +400,7 @@ body{
 .contact{
     margin: 0;
     &__icon{
+        
         margin-right: 1em;
         width: 1.2em;
     }
@@ -495,12 +516,12 @@ body{
             margin: 0 0.5em;
             width: 3.5rem;
             height: 3.5rem;
-            transition: 0.3s width, height 0.3s;
+            cursor: pointer;
+            transition: transform 1s;
         }
 
         &-icon:hover{
-            width: 4rem;
-            height: 4rem;
+            transform: scale(1.1);
         }
     }
 }
@@ -539,7 +560,8 @@ body{
         }
     
         &__btn{
-            font-size: 2.2rem;
+            top: 3%;
+            font-size: 2.5rem;
         }
 
     }
@@ -632,7 +654,7 @@ body{
         }
     
         &__btn{
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
 
     }
@@ -928,6 +950,7 @@ body{
         }
     
         &__btn{
+            top: 0;
             padding: 0.6em 1.2em;
             font-size: 2.8rem;
         }
@@ -1040,21 +1063,16 @@ body{
         &__numbers{
             padding-right: 2em;
             padding-left: 0;
-            font-size: 1.8rem;
+            font-size: 1.7rem;
         }
 
         &__social{
             &-icon{
-                transform: translateY(100%);
+                margin-top: 3em;
                 margin-left: 0;
                 margin-right: 2em;
                 width: 4.5rem;
                 height: 4.5rem;
-            }
-
-            &-icon:hover{
-                width: 5rem;
-                height: 5rem;
             }
         }
 }

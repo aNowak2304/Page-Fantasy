@@ -4,6 +4,27 @@ const navBtnActive = document.querySelector('.burger-active');
 const allNavLinks = document.querySelectorAll('.nav__item');
 const footerYear = document.querySelector('.footer__year')
 const scrollSpySections = document.querySelectorAll('.section')
+const msgStatus = document.querySelector('.msg-status')
+
+if (document.location.search === '?mail_status=sent'){
+    msgStatus.classList.add('success')
+    msgStatus.textContent = 'Wiadomość wysłana!'
+    
+    setTimeout(() => {
+       msgStatus.classList.remove('success') 
+    }, 3000);
+}
+
+if (document.location.search === '?mail_status=error'){
+    msgStatus.classList.add('error')
+    msgStatus.textContent = 'Wystąpił błąd.'
+    
+    setTimeout(() => {
+       msgStatus.classList.remove('error') 
+    }, 3000);
+}
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const navDesktop = document.querySelector('.nav-desktop')
@@ -22,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 const handleNav = () => {
-    navBtnActive.classList.toggle('burger-active');
+    navBtn.classList.toggle('burger-active');
     navMobile.classList.toggle('nav--active');
     allNavLinks.forEach(link => {
         link.addEventListener('click', () =>{

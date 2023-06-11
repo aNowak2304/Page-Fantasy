@@ -8,13 +8,14 @@
     <title>Page Fantasy</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./dist/css/main.min.css">
+<link rel="shortcut Icon" type="image/jpg" href="/dist/img/Fav_icon.jpg">
 </head>
 
 <body class="main-page">
     <header class="header section">
         <nav class="nav nav-desktop ">
     <div class="nav__left">
-<!-- <a href="#islands" class="nav__logo">logo firmy</a> -->
+<a href="#" class="nav__logo"><img class="nav__logo-img" src="/dist/img/Logo_blue.png" alt=""></a>
     </div>
 
         <div class="nav__right">
@@ -26,7 +27,7 @@
 
 </nav>
 
-<button class="burger-btn burger-active">
+<button class="burger-btn">
     <div class="burger-btn__box">
         <span class="burger-btn__bars  burger-btn__one"></span>
         <span class="burger-btn__bars  burger-btn__two "></span>
@@ -35,13 +36,12 @@
 </button>
 
 <nav class="nav nav-mobile">
-
+    <a href="#" class="nav__logo"><img src="/dist/img/Logo_blue.png" alt="" class="nav__logo-img"></a>
     <div class="nav-content">
         <a href="#services" class="nav__item">Usługi</a>
         <a href="#aboutus" class="nav__item">O nas</a>
-        <a href="#work" class="nav__item">Kontakt</a>
+        <a href="#work" class="nav__item">Praca</a>
         <a href="#contact" class="nav__item"><button class="nav__btn btn-special-animation">Bezpłatna wycena</button></a>
-    <!-- <a href="#islands" class="nav__logo">logo firmy</a> -->
     </div>
 </nav>
 
@@ -49,10 +49,10 @@
             <div class="header__left">
 
                 <h1 class="header__heading">
-                    <p class="header__heading-thin"> Page </p> Fantasy
+                    <span class="header__heading-thin"> Page </span> Fantasy
                 </h1>
-                <p class="header__text">Lorem ipsum dolor sit amet consectetur.</p>
-                <button class="header__btn">Kontakt</button>
+                <p class="header__text">Strony internetowe to nasza specjalność!</p>
+                <a href="#contact"><button class="header__btn">kontakt</button></a>
             </div>
             <div class="header__right">
                 <img class="header__right-img" src="./dist/img/headerImg.png" alt="">
@@ -65,36 +65,27 @@
             <h2 class="section-heading">Nasze Usługi</h2>
 
             <div class="services__box">
-                <div class="services__box-img"></div>
+                <div class="services__box-img"><img class="services__img" src="/dist/img/budowa.png" alt=""></div>
                 <div class="services__box-text">
-                    <h2 class="services__box-heading">Web Development</h2>
-                    <p class="services__box-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-                        molestias beatae corporis perspiciatis iure? Iure nostrum impedit quaerat officia, distinctio
-                        quisquam minus. Velit dolores eligendi aliquam blanditiis cupiditate ullam voluptate eius non
-                        ex, eaque iusto quos, atque id numquam assumenda?</p>
+                    <h2 class="services__box-heading">Tworzenie stron</h2>
+                    <p class="services__box-info">Masz firmę, a nie masz strony? Oferujemy bezpłatna wycenę, która umożliwi nam ustalić warunki naszej współpracy. Zadbamy o twój hosting, optymalizację, oprawę graficzną czy pozycjonowanie w wyszukiwarce Google. Nasze witryny są dostosowane do każdego urządzenia!</p>
                 </div>
             </div>
 
-            <div class="services__box">
-                <div class="services__box-img"></div>
+            <div class="services__box services__box--right">
+                <div class="services__box-img"><img class="services__img" src="/dist/img/projektowanie.png" alt=""></div>
                 <div class="services__box-text">
-                    <h2 class="services__box-heading">Web Design</h2>
-                    <p class="services__box-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-                        molestias beatae corporis perspiciatis iure? Iure nostrum impedit quaerat officia, distinctio
-                        quisquam minus. Velit dolores eligendi aliquam blanditiis cupiditate ullam voluptate eius non
-                        ex, eaque iusto quos, atque id numquam assumenda?</p>
+                    <h2 class="services__box-heading">Design aplikacji</h2>
+                    <p class="services__box-info">Potrzebujesz oprawy graficznej dla twojej firmy? Albo chcesz zmienić wygląd twojego brandu? Page Fantasy oferuje ci przygotowanie logotypu dla twojej firmy, stworzenie wizytówek lub zaprojektowanie twojej strony internetowej albo aplikacji, która będzie dopasowana do twoich potrzeb i wymagań.</p>
                 </div>
             </div>
 
 
             <div class="services__box">
-                <div class="services__box-img"></div>
+                <div class="services__box-img"><img class="services__img" src="/dist/img/renowacja.png" alt=""></div>
                 <div class="services__box-text">
-                    <h2 class="services__box-heading">Web Rebuild</h2>
-                    <p class="services__box-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-                        molestias beatae corporis perspiciatis iure? Iure nostrum impedit quaerat officia, distinctio
-                        quisquam minus. Velit dolores eligendi aliquam blanditiis cupiditate ullam voluptate eius non
-                        ex, eaque iusto quos, atque id numquam assumenda?</p>
+                    <h2 class="services__box-heading">Renowacja witryny</h2>
+                    <p class="services__box-info">Twoja strona jest przestarzała? Uważasz, że wygląd lub wykonanie strony nie jest odpowiednie i myślisz, że pora na zmiany? My też się tym zajmiemy! Odnowimy twoją szatę graficzną, uaktualinimy treści i wypozycjonujemy twoją stronę, w taki sposób, żeby odpowiadała twoim preferencją!</p>
                 </div>
             </div>
 
@@ -106,15 +97,8 @@
         <div class="wrapper">
             <div class="aboutus__box">
                 <div class="aboutus__box-info">
-                    <p class="aboutus__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-                        praesentium
-                        quaerat incidunt, est enim aliquid a quia necessitatibus dicta deleniti explicabo alias nulla,
-                        sunt,
-                        laboriosam qui architecto? Beatae repellat atque dignissimos explicabo?</p>
-                    <p class="aboutus__box-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut dolor
-                        eveniet
-                        totam accusantium eligendi, aliquid nisi aliquam laboriosam, quaerat rem fugit culpa laudantium
-                        officia.</p>
+                    <p class="aboutus__box-text">Celem Page Fantasy jest pomoc firmą, które chcą rozwijać swój biznes, dzięki promowaniu swojego biznesu w internecie. Jako Firma pracujemy, żeby nasz klient był zawodolony z efektu naszej pracy.  </p>
+                    <p class="aboutus__box-text">Przed rozpoczęciem realizacji projektu uzgadniamy z naszymi klientami szczegóły, ponieważ zależamy nam nad zrozumieniem z naszymi klientami</p>
 
                 </div>
 
@@ -133,34 +117,26 @@
             <div class="timeline">
                 <div class="work__box work__box--left">
                     <p class="work__box-bg work__box-bgLeft">1</p>
-                    <h4 class="work__box-heading">Lorem, ipsum.</h4>
-                    <p class="work__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
-                        veniam odit assumenda, beatae temporibus sed. Explicabo natus, velit esse ut debitis numquam
-                        commodi rerum mollitia quod, placeat accusantium itaque libero iusto provident eum soluta.</p>
+                    <h4 class="work__box-heading">Wycena projektu</h4>
+                    <p class="work__box-text">Na początku ustalamy z tobą schemat naszej współpracy. Proponujemy darmową wycenę, która ułatwia nam ustalić plan działania naszej współpracy. W trakcie wyceny dogadujemy cenę oraz formę płatności produktu.</p>
                 </div>
 
                 <div class="work__box work__box--right">
                     <p class="work__box-bg work__box-bgRight">2</p>
-                    <h4 class="work__box-heading">Lorem, ipsum.</h4>
-                    <p class="work__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
-                        veniam odit assumenda, beatae temporibus sed. Explicabo natus, velit esse ut debitis numquam
-                        commodi rerum mollitia quod, placeat accusantium itaque libero iusto provident eum soluta..</p>
+                    <h4 class="work__box-heading">Ustalenie szczegołów</h4>
+                    <p class="work__box-text">W tym etapie opracowujemy szkic twojej strony. Dobieramy komponenty, tak aby witryna była dostosowana do twoich upodobań. Tworzymy odzorowanie graficzne strony, dzięki któremu ty decydujesz czy nasza praca cie satysfakcjonuje</p>
                 </div>
 
                 <div class="work__box work__box--left">
                     <p class="work__box-bg work__box-bgLeft">3</p>
-                    <h4 class="work__box-heading">Lorem, ipsum.</h4>
-                    <p class="work__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
-                        veniam odit assumenda, beatae temporibus sed. Explicabo natus, velit esse ut debitis numquam
-                        commodi rerum mollitia quod, placeat accusantium itaque libero iusto provident eum soluta.</p>
+                    <h4 class="work__box-heading">Realizacja projektu</h4>
+                    <p class="work__box-text">W trakcie realizacji pracujemy nad każdym najmniejszym szczegółem. Dbamy o responsywność strony, o pozycjonowanie w wyszukiwarkach, ale także nad grafikiami czy tekstem na twojej stronie.</p>
                 </div>
 
                 <div class="work__box work__box--right">
                     <p class="work__box-bg work__box-bgRight">4</p>
-                    <h4 class="work__box-heading">Lorem, ipsum.</h4>
-                    <p class="work__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi voluptate
-                        veniam odit assumenda, beatae temporibus sed. Explicabo natus, velit esse ut debitis numquam
-                        commodi rerum mollitia quod, placeat accusantium itaque libero iusto provident eum soluta.</p>
+                    <h4 class="work__box-heading">Ocena klienta</h4>
+                    <p class="work__box-text">Na koniec pozostaje nam pokazanie tobie owocy naszej pracy! Oddajemy nasze dzieło w twoje ręce i w ramach potrzeby dokonujemy poprawek. Nie zostawimy cię z tym samego! W razie potrzeb w przyszłości też zajmiemy się twoją stroną.</p>
                 </div>
             </div>
         </div>
@@ -168,54 +144,72 @@
 
 
     <section class="section contact section-padding" id="contact">
-<div class="left-section"></div>
-            <div class="wrapper">
-                <div class="contact__left">
-                    <h2 class="contact__heading">Kontakt</h2>
-                    <p class="contact__info">Napisz wiadomość lub zadzwoń</p>
-                    <div class="contact__box">
+        <div class="left-section"></div>
+        <div class="wrapper">
+            <div class="contact__left">
+                <h2 class="contact__heading">Kontakt</h2>
+                <p class="contact__info">Napisz wiadomość lub zadzwoń</p>
+                <div class="contact__box">
 
-                        <div class="contact__card">
-                            <div class="contact__numbers">
-                                <img class="contact__icon" src="./dist/img/right-arrow.svg" alt=""> <p class="contact__numbers-text"> +48 000 000 788</p>
-                            </div>
-    
-                            <div class="contact__numbers">
-                                <img class="contact__icon" src="./dist/img/right-arrow.svg" alt=""> <p class="contact__numbers-text">mail@gmail.com</p>
-                            </div>
+                    <div class="contact__card">
+                        <div class="contact__numbers">
+                            <img class="contact__icon" src="./dist/img/right-arrow.svg" alt="">
+                            <p class="contact__numbers-text">882 421 788</p>
                         </div>
 
-                        <div class="contact__card">
-                            <div class="contact__numbers">
-                                <img class="contact__icon" src="./dist/img/right-arrow.svg" alt=""> <p class="contact__numbers-text"> +48 000 000 788</p>
-                            </div>
-    
-                            <div class="contact__numbers">
-                                <img class="contact__icon" src="./dist/img/right-arrow.svg" alt=""> <p class="contact__numbers-text">mail@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact__social">
-                            <img class="contact__social-icon" src="./dist/img/instagramBlack.svg" alt="">
-                            <img class="contact__social-icon" src="./dist/img/linkedinBlack.svg" alt="">
-                            <img class="contact__social-icon" src="./dist/img/facebookBlack.svg" alt="">
-                            <img class="contact__social-icon" src="./dist/img/whatsappBlack.svg" alt="">
+                        <div class="contact__numbers">
+                            <img class="contact__icon" src="./dist/img/right-arrow.svg" alt="">
+                            <p class="contact__numbers-text">a.nowak2304@gmail.com</p>
                         </div>
                     </div>
-                </div>
-                <div class="contact__right">
-                    <input type="text" class="contact__input" id="name" placeholder="Imię i Nazwisko:">
-                    <input type="text" class="contact__input" id="email" placeholder="Adres E-mail:">
-                    <input type="text" class="contact__input" id="topic" placeholder="Temat:">
-                    <textarea id="msg" class="contact__textarea" placeholder="Wiadomość:"></textarea>
 
-                    <button class="contact__btn btn-special-animation">Wyślij</button>
-                    <p class="contact__form">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-                        deleniti magni eum sit ipsam voluptates adipisci voluptatum maxime alias iusto eveniet nobis,
-                        perferendis necessitatibus dolores repellendus, atque quisquam sequi ad!</p>
+                    <div class="contact__card">
+                        <div class="contact__numbers">
+                            <img class="contact__icon" src="./dist/img/right-arrow.svg" alt="">
+                            <p class="contact__numbers-text">782 138 862</p>
+                        </div>
+
+                        <div class="contact__numbers">
+                            <img class="contact__icon" src="./dist/img/right-arrow.svg" alt="">
+                            <p class="contact__numbers-text">mail@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__social">
+                        <img class="contact__social-icon" src="./dist/img/instagramBlack.svg" alt="">
+                        <img class="contact__social-icon" src="./dist/img/linkedinBlack.svg" alt="">
+                        <img class="contact__social-icon" src="/dist/img/facebookBlack.svg" alt="">
+                        <img class="contact__social-icon" src="./dist/img/whatsappBlack.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="right-section"></div>
+            <div class="contact__right">
+                <form class="contact__form" action="/dist/php/mail.php" method="post">
+
+                    <div class="contact__box">
+                        <label for="name" class="contact__label">Imię:</label>
+                        <input type="text" name="name" class="contact__input" id="name" required>
+                    </div>
+
+                    <div class="contact__box">
+                        <label for="email" class="contact__label">Email:</label>
+                        <input type="email" class="contact__input" id="email" name="email" required>
+                    </div>
+
+                    <div class="contact__box">
+                        <label for="msg" class="contact__label">Wiadomość:</label>
+                        <textarea class="contact__textarea" name="msg" id="msg" required></textarea>
+                    </div>
+
+                    <button class="contact__btn btn-special-animation">Wyślij</button>
+                </form>
+
+                <p class="msg-status"></p>
+
+                <p class="contact__text">Wypełnienie formularza oznacza, że akceptujesz, w jaki sposób będą przetwarzane twoje dane. Po kliknięciu przycisku „Wyślij” zostaną nam udostępnione dane, które wykorzystujemy w celu udzielenia odpowiedzi na Państwa pytania. Jeśli chcesz się dowiedzieć więcej na ten temat, zajrzyj do <a href="" class="privacy-policy">Polityka Prywatności.</a></p>
+            </div>
+        </div>
+        <div class="right-section"></div>
     </section>
     <footer class="footer">
     <div class="wrapper">
@@ -241,7 +235,7 @@
             </div>
 
             <div class="footer__box-info">
-                <h5 class="footer__box-heading">Web Design:</h5>
+                <h5 class="footer__box-heading">Web Designer:</h5>
 
                 <div class="footer__content">
                     <img class="footer__content-icon" src="./dist/img//user.svg" alt="">
@@ -250,7 +244,7 @@
 
                 <div class="footer__content">
                     <img class="footer__content-icon" src="./dist/img/telephone.svg" alt="">
-                    <p class="footer__box-text">+48 728 421 128</p>
+                    <p class="footer__box-text">+48 782 138 862</p>
                 </div>
 
                 <div class="footer__content">
@@ -268,7 +262,7 @@
             </div>
         </div>
     </div>
-    <p class="footer__bottom-text"> &copy; <span class="footer__year"></span> Page Fantasy | logo firmy</p>
+    <p class="footer__bottom-text">Wszelkie prawa zastrzeżone &copy; <span class="footer__year"></span> | Page Fantasy </p>
 </footer>
 
     <script src="./dist/js/main.min.js"></script>

@@ -18,3 +18,5 @@ if ($mail_status){
 }else{
     header("Location: /index.html?mail_status=error");
 }
+
+?>

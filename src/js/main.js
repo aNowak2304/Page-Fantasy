@@ -5,26 +5,34 @@ const allNavLinks = document.querySelectorAll('.nav__item');
 const footerYear = document.querySelector('.footer__year')
 const scrollSpySections = document.querySelectorAll('.section')
 const msgStatus = document.querySelector('.msg-status')
+const cookie = document.querySelector('.cookie-box')
+const cookieBtn = document.querySelector('.cookie-box__btn')
 
-if (document.location.search === '?mail_status=sent'){
-    msgStatus.classList.add('success')
-    msgStatus.textContent = 'Wiadomość wysłana!'
-    
-    setTimeout(() => {
-       msgStatus.classList.remove('success') 
-    }, 3000);
+let seconds = 0;
+
+const successTimer = () => {
+    seconds ++;
 }
+setInterval(successTimer, 1000);
 
-if (document.location.search === '?mail_status=error'){
-    msgStatus.classList.add('error')
-    msgStatus.textContent = 'Wystąpił błąd.'
-    
-    setTimeout(() => {
-       msgStatus.classList.remove('error') 
-    }, 3000);
+const returnPage = () => {
+if(document.body.classList.contains('success-page')){
+    window.location.replace("https://www.page-fantasy.pl");
 }
+}
+setTimeout(returnPage, 3000);
 
-
+const showCookie = () => {
+    const cookieEaten = localStorage.getItem('cookie');
+    if (cookieEaten) {
+        cookie.classList.add('hide')
+    }
+}
+showCookie()
+const handleCookie = () => {
+    localStorage.setItem('cookie', 'true')
+    cookie.classList.add('hide')
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     const navDesktop = document.querySelector('.nav-desktop')
@@ -79,5 +87,8 @@ const handleCurrentYear = () => {
 }
 handleCurrentYear();
 
+
+
 window.addEventListener('scroll', handleScrollSpy)
 navBtn.addEventListener('click', handleNav);
+cookieBtn.addEventListener('click', handleCookie);
